@@ -1,0 +1,36 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mural de Mensagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="titulo">Titulo</label> <br>
+                <input class="formulario__campo" type="text" id="titulo" >
+            </div>
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="autor">Autor</label> <br>
+                <input class="formulario__campo" type="text" id="author" >
+            </div>
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="">Mensagem</label><br>
+                <textarea class="formulario__campo" type="text" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input class="formulario__botao__enviar" type="submit" value="Enviar" onclick="escrever()">
+            </div>
+            <div>
+                <br><input type="submit" class="formulario__botao__delete" value="Deletar" type="submit" onclick="deletar()">
+            </div>
+            <form action="controle.js" >
+                
+            </form>
+    </div>
+    <script src="controle.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</body>
+</html>
