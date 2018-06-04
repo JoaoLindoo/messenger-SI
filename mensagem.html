@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href= "css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>Mensagens</title>
 </head>
-<body><!-- Corpo do site -->
+<body>
     <header class="cabecalho">
         <h1 class="logo"> "Logo" </h1>
         <nav class="menu-principal">
             <button class="menu-principal__btn">Abrir/Fechar menu</button>
             <ul class="menu-principal__lista">
-                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
-                <li><a class="menu-principal__item " href="mensagem.html">Mensagem</a></li>
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="mensagem.html">Mensagem</a></li>
                 <li><a class="menu-principal__item" href="filtros.html">Filtro</a></li>
                 <li><a class="menu-principal__item" href="apagar.html">Apagar</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <header class="cabecalho-home">
-            <h2 class="cabecalho-home__titulo">Trabalho : Projeto De Software</h2>
-            <p>O site foi desenvolvido com o intuito de testar o 
-                conhecimento e fazer interações entre os alunos do curso de ciencia da computação</p>
-            <a class="cabecalho-home__role" href="#servicos">role para ver mais</a>
-        </header>
-        <section id="servico"> <!-- Seção serviço -->
-            <h2  class="home__titulo">Nesse site será possivel</h2>
-            <section class="servicos"><!-- Enviar Mensagens -->
-                <img src="imagens/index/enviar.png" alt="enviar mensagem">
-                <h3>Enviar Mensagens</h3>
-                <p>Enviar uma mensagem para um mural de mensagem em um determinado servidor, usando uma função chamada fetch</p>
-            </section>
-            <section class="servicos">  <!-- Apagar -->
-                <img src="imagens/index/apagar.png" alt="">
-                <h3>Apagar As Mensagens</h3>
-            </section>
-            <section class="servicos"> <!-- Filtrar -->
-                 <img src="imagens/index/filter.png" alt="">
-                <h3>Visualizar As Mensagens</h3>
-            </section>
-    </main>
-     <footer class="rodape">   
+    <header class="pagina-cabecalho">    
+        <h1 class="pagina-cabecalho-texto">Mural De Mensagens</h1>
+    </header>
+    <div class="formulario">
+        <div class="formulario__grupo">
+            <label class="formulario__label" for="id">Usuario </label><br>
+            <input class="fomulario__campo" id = "id"type="text" placeholder="Usuario" name="id">
+        </div>
+        <div class="formulario__grupo">
+            <label class="formulario__label" for="senha">Senha </label><br>
+            <input class="fomulario__campo"  id="senha" type="password" placeholder="Senha" name="senha">
+        </div>
+        <div class="formulario__grupo">
+            <label class="formulario__label" for="autor">Autor </label><br>
+            <input class="fomulario__campo" id = "autor" type="text" placeholder="Autor" name="autor">
+        </div>
+        <div class="formulario__grupo">
+            <label class="formulario__label" for="titulo">titulo </label><br>
+            <input class="fomulario__campo" id = "titulo"type="text" name="titulo" placeholder="Titulo">
+        </div>
+        <div class="formulario__grupo">
+            <label class="formulario__label" for="mensagem">Mensagem</label><br>
+            <textarea class="fomulario__campo"  name="mensagem" id="mensagem" cols="40" rows="15"></textarea>
+        </div>
+        <input type="submit" class="formulario__botao" onclick="inputMensagem()" value="Enviar">
+    </div>
+      <footer class="rodape">   
         <div class="rodape__linha-1">
             <div class="rodape__coluna">
                 <a href="index.html" class="logo">Projeto de Software</a>
                 <p>O site foi desenvolvido com o intuito de testar o conhecimento e 
-                    fazer interações entre os alunos do curso de ciencia da computação</p>
+                    fazer interações entre os alunos no curso de ciencia da computação</p>
             </div>
             <div class="rodape__coluna">
                 <h2 class="rodape__titulo">Social</h2>
@@ -72,7 +75,7 @@
             © 2018 - Todos os direitos reservados - João henrique
         </div>
     </footer>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
-   <script src="codigoPL/controle.js"></script>  
-</body>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+         <script src="codigoPL/controle.js"></script>
+    </body>
 </html>

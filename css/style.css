@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src:url('../fontes/SourceSansPro-Regular.otf');
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src:url('../fontes/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src:url('../fontes/SourceSansPro-Boldit.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+     font-family: "Source Sans Pro";
+}
+.cabecalho {
+    background: #fff;
+    padding: 15px;
+}
+
+.logo{
+    background-image: url('../imagens/logo.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 50px;
+    text-indent: -999px;
+    margin: 0;
+}
+.menu-principal__btn{
+    display: block;
+    width:36px;
+    height:36px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background: #fff;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('../imagens/text.png');
+
+    position: absolute;
+    top:15px;
+    right: 15px;
+   
+}
+
+.menu-principal__btn--fechar{
+    background-image: url('../imagens/fechar.jpg')
+}
+.menu-principal__lista{
+    padding: 0;
+    list-style: none;
+
+}
+.menu-principal__item {
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 18px;
+}
+.menu-principal__item--atual{
+    color: blue;
+}
+.cabecalho-home {
+    background: url('../imagens/fundo-cinza.jpg') #000 no-repeat;
+    background-size: cover;
+
+    color: #fff;
+    text-align:  center;
+    padding: 30px 0px;
+}
+.cabecalho-home__titulo {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.pagina-cabecalho{
+    background-color: blue;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    background-image: url('../imagens/fundo-cinza.jpg');
+}
+.cabecalho-home__role {
+    display: none;
+}
+.pagina-cabecalho-texto::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.pagina-cabecalho-texto{
+    text-align: center;
+}
+.home__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+.home__titulo::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color :#fff;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*rodape*/
+.rodape{
+    color: #fff;
+}
+.rodape.logo{
+    margin-bottom: 20px;
+}
+.rodape__linha-1 {
+    background-color: #272525;
+    background-image: url('../imagens/index.jpg');
+    background-size: cover;
+    padding: 15px;
+}
+.rodape__linha-2 {
+    background-color: #000;
+    text-align:  center;
+    padding: 15px;
+}
+.rodape__coluna {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.rodape__titulo {
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+.rodape__lista--links{
+    padding: 0;
+    list-style: none;
+}
+.rodape__lista--links__item{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+.rodape__lista--links__item::before{
+    content: '>';
+    margin-right: 8px;
+    color: black;
+}
+.pagina-conteudo{
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.pagina-conteudo p {
+    color: #3a3a3a;
+    line-height: 22px;
+    margin-top:  20px;
+    margin-bottom: 20px;
+}
+.text-center {
+    text-align: center;
+}
+.lista-trabalhos{
+    list-style: none;
+    padding: 0;
+}
+.lista-trabalhos__item {
+    margin-bottom: 40px;
+}
+.lista-trabalhos__item a {
+    text-decoration: none;
+}
+.lista-trabalhos__titulo {
+    color: black;
+    font-size:  18px;
+    margin-left: -3px;
+    border-left: 1px solid black;
+}
+.formulario {
+    background-color: #efecec;
+    padding: 30px 15px 40px 15px;
+    box-shadow:  0 0 10px #989898;
+}
+.formulario__campo {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.formulario__grupo {
+    margin-bottom: 10px;
+}
+.formulario__label {
+    color: #343434;
+
+}
+.formulario__botao {
+    border:  3px solid blue;
+    border-radius:  300px;
+    background-color: #fff;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    font-weight: bold;
+}
+.servicos {
+    text-align: center;
+    padding:  0 15px;
+    margin-bottom: 50px;
+}
+.servico {
+    padding: 30px 0;
+} 
